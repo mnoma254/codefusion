@@ -269,3 +269,25 @@ details:hover[open] {
   background-color: royalblue !important;
   border-radius: 50% !important;
 }
+/* Ensure the logo is properly positioned and does not overlap */
+.logo img {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Adjust the nav element to ensure it has enough space */
+nav {
+  padding-top: 50px; /* Adjust this value as needed */
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 20px; /* Adjust this value to ensure enough spacing */
+  }
+  nav {
+    padding-top: 70px; /* Ensure enough space for the logo */
+  }
+}
