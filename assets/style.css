@@ -69,13 +69,15 @@ details:hover[open] {
 /*! mobile Nav  */
 #mobileNav {
   position: fixed; /* Fix the menu at the top */
+  right: 0; /* Align the menu to the right */
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000; /* Ensure it stays above other elements */
-  animation: mobileNav 0.3s ease-in-out forwards;
-  background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color as needed */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hiding */
+  animation: mobileNav 3s ease-in-out forwards;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  transition: transform 3s ease-in-out; /* Smooth transition for hiding */
 }
 
 #mobileNav.hidden {
