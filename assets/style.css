@@ -266,7 +266,7 @@ details:hover[open] {
 #blog .swiper-pagination-bullet {
   width: 1rem !important;
   height: 1rem !important;
-  background-color: royalblue !important;
+  background-color: rgb(30, 255, 0) !important;
   border-radius: 50% !important;
 }
 /* Ensure the logo is properly positioned and does not overlap */
@@ -275,6 +275,7 @@ details:hover[open] {
   z-index: 10;
   margin: 0 auto;
   display: block;
+  width: 90px; /* Set the logo width to 90px */
 }
 
 /* Adjust the nav element to ensure it has enough space */
@@ -290,4 +291,8 @@ nav {
   nav {
     padding-top: 70px; /* Ensure enough space for the logo */
   }
+}
+
+.start-your-stories {
+  background-color: yellow; /* Change background to yellow */
 }
