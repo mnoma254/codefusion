@@ -89,3 +89,16 @@ if (servicesLink) {
     document.getElementById("services").scrollIntoView({ behavior: "smooth" });
   });
 }
+
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down
+    mobileNav.classList.add('hidden');
+  } else {
+    // Scrolling up
+    mobileNav.classList.remove('hidden');
+  }
+  lastScrollY = window.scrollY;
+});
