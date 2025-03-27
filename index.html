@@ -48,40 +48,22 @@
     >
       <!--? mobile navbar  -->
 
-      <nav>
-        <ul class="hidden w-full flex-col gap-2 mt-4" id="mobileNav">
-          <!-- Home -->
-          <li class="w-full hover:bg-gray-600 rounded-md p-1">
-            <a href="#home">Home</a>
-          </li>
-          <!-- About -->
-          <li class="w-full hover:bg-gray-600 rounded-md p-1">
-            <a href="#about">About</a>
-          </li>
-          <!-- Portfolio -->
-          <li class="w-full hover:bg-gray-600 rounded-md p-1">
-            <a href="#portfolio">Portfolio</a>
-          </li>
-          <!-- Services -->
-          <li class="w-full hover:bg-gray-600 rounded-md p-1">
-            <a href="#services">Services</a>
-          </li>
-          <!-- Pages with Dropdown -->
-          <li class="w-full">
-            <details class="hover:bg-gray-600 rounded-md p-1 cursor-pointer">
-              <summary>Pages</summary>
-              <div class="flex flex-col p-4">
-                <a class="hover:bg-gray-600 rounded-lg p-2" href="#home">Home</a>
-                <a class="hover:bg-gray-600 rounded-lg p-2" href="#about">About</a>
-                <a class="hover:bg-gray-600 rounded-lg p-2" href="#blog">Blog</a>
-                <a class="hover:bg-gray-600 rounded-lg p-2" href="#blog-details">Blog Details</a>
-              </div>
-            </details>
-          </li>
-          <li class="w-full hover:bg-gray-600 rounded-md p-1">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+      ><nav class="absolute left-10 md:left-20 w-10/12 -translate-y-50 z-20 flex items-center justify-between lg:hidden">
+        <div class="w-full flex flex-col justify-start items-start min-h-96 bg-transparent p-4 px-8 overflow-hidden">
+          <div class="w-full flex items-center justify-between">
+            <img class="w-36" src="./assets/images/logo.webp" alt="logo" />
+            <button id="mobileNavButton" type="button">
+              <h4>MENU</h4>
+              <ion-icon class="text-xl" name="menu-outline"></ion-icon>
+            </button>
+          </div>
+          <!-- Hypothetical menu items -->
+          <ul class="hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
 
       <!--* deskop navbar  -->
