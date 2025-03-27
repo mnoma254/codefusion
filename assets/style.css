@@ -28,7 +28,7 @@ img {
   object-fit: cover;
 }
 hr {
-  border-color: #20182d !important;
+  border-color: #18232d !important;
 }
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -291,8 +291,4 @@ nav {
   nav {
     padding-top: 70px; /* Ensure enough space for the logo */
   }
-}
-
-.start-your-stories {
-  background-color: yellow; /* Change background to yellow */
 }
