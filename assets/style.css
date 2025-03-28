@@ -306,3 +306,24 @@ nav {
     padding-top: 0px; /* Ensure enough space for the logo */
   }
 }
+
+/* Style the inner div with a background for the logo and button */
+nav > div > div {
+  background-color: transparent
+  padding 0.5rem;
+}
+
+/* Style the menu list with a blurred background */
+nav ul {
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+/* Style the menu links to be bold and italic */
+nav ul li a {
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(255, 230, 0);
+}

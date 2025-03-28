@@ -75,7 +75,7 @@ var header = new Swiper(headerSwiper, {
 const contactLink = document.getElementById("contactLink");
 
 if (contactLink) {
-  contactLink.addEventListener("hoover", function(event) {
+  contactLink.addEventListener("click", function(event) {
     event.preventDefault();
     document.getElementById("team").scrollIntoView({ behavior: "smooth" });
   });
@@ -101,4 +101,22 @@ window.addEventListener('scroll', () => {
     mobileNav.classList.remove('hidden');
   }
   lastScrollY = window.scrollY;
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const button = document.getElementById('mobileNavButton');
+  const menu = button.parentElement.nextElementSibling;
+
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Optional: close menu when a link is clicked
+  const menuLinks = menu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      menu.classList.toogle(hidden);
+    });
+  });
 });
