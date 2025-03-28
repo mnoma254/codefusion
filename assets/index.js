@@ -72,36 +72,7 @@ var header = new Swiper(headerSwiper, {
 
 })
 
-const contactLink = document.getElementById("contactLink");
-
-if (contactLink) {
-  contactLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("team").scrollIntoView({ behavior: "smooth" });
-  });
-}
-
-const servicesLink = document.getElementById("servicesLink");
-
-if (servicesLink) {
-  servicesLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    document.getElementById("services").scrollIntoView({ behavior: "smooth" });
-  });
-}
-
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > lastScrollY) {
-    // Scrolling down
-    mobileNav.classList.add('hidden');
-  } else {
-    // Scrolling up
-    mobileNav.classList.remove('hidden');
-  }
-  lastScrollY = window.scrollY;
-});
+const contactLink = document.getElementById("contactLink"); 
 
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.getElementById('mobileNavButton');
