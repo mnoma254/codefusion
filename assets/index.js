@@ -87,7 +87,29 @@ document.addEventListener('DOMContentLoaded', () => {
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       menu.classList.add('hidden');
-      menu.classList.toogle(hidden);
+      menu.classList.toggle('hidden');
     });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const links = [
+    { selector: 'a[href="#home"]', targetId: 'home' },
+    { selector: 'a[href="#about"]', targetId: 'about' },
+    { selector: 'a[href="#team"]', targetId: 'team' },
+    { selector: 'a[href="#contact"]', targetId: 'contact' },
+    { selector: 'a[href="#services"]', targetId: 'services' }
+  ];
+
+  links.forEach(link => {
+    const linkElement = document.querySelector(link.selector);
+    const targetSection = document.getElementById(link.targetId);
+
+    if (linkElement && targetSection) {
+      linkElement.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+        targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the section
+      });
+    }
   });
 });
