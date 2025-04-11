@@ -187,8 +187,8 @@
         class="w-full min-h-screen flex items-center justify-center flex-col lg:flex-row p-8 lg:px-32 gap-8"
       >
         <div class="lg:w-2/6 flex flex-col gap-4 mb-12">
-          <h3 class="text-lg tracking-widest">OUR SERVICES</h3>
-          <h1 class="font-bold text-4xl">WHAT WE DO??</h1>
+            <h3 class="text-lg tracking-widest font-bold" style="color: rgb(255, 0, 128);">OUR SERVICES...</h3>
+            <h1 class="font-bold text-4xl" style="color: rgb(0, 255, 0);">WHAT WE DO??</h1>
           <div class="w-1/4 h-1 bg-blue-400"></div>
           <p class="text-sm font-semibold leading-6 text-gray-400 mt-8">
             We are a team of passionate individuals who are dedicated to providing
@@ -200,7 +200,7 @@
           <button class="mt-6 text-lg font-semibold header_button" type="button">
             <div></div>
             <div></div>
-            SEE MORE ABOUT US
+            <span style="color: rgb(255, 238, 0);">SEE MORE ABOUT US</span>
           </button>
         </div>
 
@@ -214,7 +214,7 @@
               ></div>
               <img class="w-1/2" src="./assets/images/icon-1.webp" alt="movie" />
             </div>
-            <h2 class="text-2xl font-semibold mt-4">Web Design</h2>
+            <h2 class="text-2xl font-semibold mt-4" style="color: rgb(0, 217, 255);">Web Design</h2>
             <p class="text-gray-400 text-sm leading-6 font-semibold mt-4">
               Web creation is where design meets code to build digital worlds. It's about crafting websites that not only look great but also work seamlessly, providing users with intuitive navigation and valuable content.
             </p>
@@ -228,7 +228,7 @@
               ></div>
               <img class="w-1/2" src="./assets/images/icon-2.webp" alt="movie" />
             </div>
-            <h2 class="text-2xl font-semibold mt-4">Short videos and Video editing</h2>
+            <h2 class="text-2xl font-semibold mt-4" style="color: rgb(0, 238, 255);">Short videos and Video editing</h2>
             <p class="text-gray-400 text-sm leading-6 font-semibold mt-4">
               We specialize in transforming raw footage into polished, engaging content through expert video editing. Whether you need cinematic storytelling, dynamic social media clips, or professional-grade short videos, we deliver high-quality results that captivate audiences and elevate your brand.
             </p>
@@ -242,7 +242,7 @@
               ></div>
               <img class="w-1/2" src="./assets/images/icon-3.webp" alt="movie" />
             </div>
-            <h2 class="text-2xl font-semibold mt-4">Digital Marketing</h2>
+            <h2 class="text-2xl font-semibold mt-4" style="color: rgb(0, 247, 255);">Digital Marketing</h2>
             <p class="text-gray-400 text-sm leading-6 font-semibold mt-4">
               Digital marketing is the art of promoting products or services through online channels like social media, email, search engines, and websites. It’s data-driven, allowing businesses to target audiences precisely and measure campaign success in real time. Content—think blogs, videos, or posts—is key to engaging customers, while SEO (Search Engine Optimization) boosts visibility by improving search rankings. Staying adaptable to the latest trends is vital in this fast-evolving field.
             </p>
@@ -256,7 +256,7 @@
               ></div>
               <img class="w-1/2" src="./assets/images/icon-4.webp" alt="movie" />
             </div>
-            <h2 class="text-2xl font-semibold mt-4">Video hosting</h2>
+            <h2 class="text-2xl font-semibold mt-4" style="color: rgb(0, 225, 255);">Video hosting</h2>
             <p class="text-gray-400 text-sm leading-6 font-semibold mt-4">
               Whether you’re halfway through the editing process, or you haven’t even
               started, our post production services can put the finishing touches.
@@ -265,7 +265,8 @@
         </div>
       </section>
 
-      <!--! portfolio -->
+      <!--! PORTFOLIO -->
+      <h1 class="text-4xl font-bold text-center mt-15" style="color: rgb(238, 255, 0); text-decoration: underline dotted rgb(255, 4, 79);">OUR PORTFOLIO</h1>
       <section class="min-h-screen w-screen">
         <div style="min-height: 40rem" class="grid grid-cols-2 lg:grid-cols-3 gap-2">
           <div class="relative overflow-hidden portfolio_item">
@@ -460,6 +461,10 @@
       <!--todo statistics  -->
       <section class="statistics w-full min-h-screen pb-16">
         <!--? for mobile -->
+        <h2 class="text-center text-2xl font-bold mt-8" style="color: yellow;">Achievements</h2>
+        <div class="flex justify-center mt-4">
+          <ion-icon name="briefcase-outline" class="text-4xl text-yellow-500"></ion-icon>
+        </div>
         <div
           class="statistics_mobile w-full grid grid-cols-1 sm:grid-cols-2 gap-8 p-8"
         >
@@ -556,8 +561,11 @@
         style="background-image: url('./assets/images/team-bg.webp')"
       >
         <div class="flex flex-col gap-4">
-          <h3 class="text-xl leading-8 mt-20 md:mt-0">MEET...</h3>
-          <h1 class="font-bold text-4xl">OUR TEAM</h1>
+            <h3 class="text-xl leading-8 mt-20 md:mt-0 flex items-center gap-2">
+            <ion-icon name="people-outline" class="text-2xl" style="color: rgb(255, 0, 98);"></ion-icon>
+            <span style="color: yellow;">MEET...</span>
+            </h3>
+          <h1 class="font-bold text-4xl" style="background: linear-gradient(to right, rgb(255, 0, 98), rgb(9, 255, 1)); -webkit-background-clip: text; color: transparent;">OUR TEAM</h1>
           <div class="w-16 h-1 bg-blue-400"></div>
         </div>
 
@@ -589,11 +597,13 @@
             <div
               class="overlay absolute z-10 w-full h-44 flex flex-col p-4 justify-center items-center gap-2"
             >
-              <h2 class="text-white font-bold text-xl">Diah M</h2>
+                <h2 class="text-white font-bold text-xl">Diah M <ion-icon name="checkmark-circle" class="text-blue-500"></ion-icon></h2>
               <h4 class="mb-2">Full-Stack Developper</h4>
                 <div class="flex items-center gap-5">
                 <ion-icon name="logo-instagram"></ion-icon>
-                <ion-icon name="logo-facebook"></ion-icon>
+                <a href="https://www.facebook.com/ni_diah" target="_blank">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
                 <ion-icon name="logo-twitter"></ion-icon>
                 <ion-icon name="logo-youtube"></ion-icon>
                 <a href="https://wa.me/+254746362415"><ion-icon name="logo-whatsapp"></ion-icon></a>
@@ -645,15 +655,21 @@
           <button class="mt-6 text-lg font-semibold header_button" type="button">
             <div></div>
             <div></div>
-            SEE MORE ABOUT US
+            <span class="hover:text-green-500">SEE MORE ABOUT US</span>
           </button>
         </div>
       </section>
 
       <!--* Blog -->
       <section class="w-4/5 mx-auto min-h-screen flex flex-col items-center gap-4">
-        <h3 class="text-lg mt-20">CODE FUSION</h3>
-        <h1 class="font-bold text-4xl">BLOG UPDATE</h1>
+        <h3 class="text-lg mt-20" style="font-family: 'sans-serif'; color: rgb(238, 255, 3);">
+          <button class="mt-6 text-lg font-semibold header_button" type="button">
+            <div></div>
+            <div></div>
+            CODE FUSION
+          </button>
+        </h3>
+        <h1 class="font-bold text-4xl" style="background: linear-gradient(to right, rgb(0, 247, 255), rgb(21, 255, 0)); -webkit-background-clip: text; color: transparent;">BLOG UPDATE</h1>
         <div class="w-16 h-1 bg-blue-400 mb-10"></div>
 
         <div id="blog" class="swiper w-full">
@@ -813,10 +829,12 @@
         >
           <h1 class="text-3xl lg:text-5xl font-bold leading-10 w-2/3">
             <h1 class="text-3xl lg:text-5xl font-bold leading-10 w-2/3 text-right">
-                <span style="color: rgb(10, 255, 2); text-align: right; display: inline-block">FRESH IDEAS, FRESH MOMENTS GIVING WINGS TO YOUR STORIES.</span>
+                <span style="color: rgb(10, 255, 2); text-align: right; display: inline-block; transition: background-color 0.3s ease-in-out; border-radius: 10px;" onmouseover="this.style.backgroundColor='rgba(0, 0, 0, 0.5)';" onmouseout="this.style.backgroundColor='transparent';">
+                  FRESH IDEAS, FRESH MOMENTS GIVING WINGS TO YOUR STORIES.
+                </span>
             </h1>
           </h1>
-          <h3 class="text-md font-semibold">Virtual AI, BEST PLACES TO WORK 2025...</h3>
+            <h3 class="text-md font-semibold" style="color: rgb(255, 1, 86);">Virtual AI, BEST PLACES TO WORK 2025...</h3>
           <button class="px-8 py-2 bg-transparent text-white font-semibold">
             <button class="px-2 py-2 bg-pink-40 text-yellow-400 font-semibold">
                 <span style="border-radius: 10px; display: inline-block; direction: ltr;">SHARE YOUR STORY</span>
@@ -832,28 +850,28 @@
         <div
           class="top_footer flex flex-col md:flex-row items-start gap-4 justify-between md:items-center"
         >
-            <div><img src="./assets/images/logo.webp" alt="logo" style="width: 70px;" /></div>
+            <div><img src="./assets/images/logo.webp" alt="logo" style="width: 90px;" /></div>
           <div class="icons flex items-center gap-2">
             <div
               class="w-10 h-10 rounded-full p-2 bg-[#231B30] flex items-center justify-center"
             >
-              <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-instagram" style="color: rgb(252, 252, 252); background-color: rgb(255, 0, 106); border-radius: 50%;"></ion-icon>
             </div>
             <div
               class="w-10 h-10 rounded-full p-2 bg-[#231B30] flex items-center justify-center"
             >
-              <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-youtube" style="color: red; background-color: white; border-radius: 50%;"></ion-icon>
             </div>
             <div
               class="w-10 h-10 rounded-full p-2 bg-[#231B30] flex items-center justify-center"
             >
-              <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-facebook" style="color: blue; background-color: white; border-radius: 50%;"></ion-icon>
               <a href="https://www.facebook.com/ni_diah" target="_blank"></a>
             </div>
             <div
               class="w-10 h-10 rounded-full p-2 bg-[#231B30] flex items-center justify-center"
             >
-              <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-twitter" style="color: rgb(47, 104, 131); background-color: white; border-radius: 50%;"></ion-icon>
             </div>
           </div>
         </div>
@@ -865,29 +883,40 @@
         >
           <ul class="flex flex-col justify-start items-start gap-4 lg:w-96 lg:pr-10">
             <li>
-              <h3 class="font-semibold md:font-bold text-lg mb-4">About us</h3>
+                <h3 class="font-semibold md:font-bold text-lg mb-4" style="color: yellow;">About us...</h3>
             </li>
             <p class="text-sm leading-6 text-[#988C88]">
               Formed in 2024 by Diah M and Joan M., Codefusion is an
               award-winning, full-service production company specializing...
             </p>
             <button class="text-semibold flex items-center text-md gap-2">
-              Read more
+                <span style="color: rgb(0, 225, 255);">Read more</span>
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </button>
           </ul>
           <ul class="flex flex-col justify-start items-start gap-2 lg:pl-24">
             <li>
-              <h3 class="font-semibold md:font-bold text-lg mb-4">Who we are...</h3>
+                <h3 class="font-semibold md:font-bold text-lg mb-4" style="color: yellow;">Who we are...</h3>
             </li>
-            <li><a class="text-[#988C88]" href="#team">Team</a></li>
-            <li><a class="text-[#988C88]" href="tel:+254746362415"><ion-icon name="logo-whatsapp"></ion-icon>
-            <li><a class="text-[#988C88]" href="mailto:bazumnoma254@gmail.com"><ion-icon name="mail-outline"></ion-icon>
-            <li><a class="text-[#988C88]" href="#about">Nyhahururu,Kenya</a></li>
+            <li><a class="text-[#988C88]" href="#team">Meet Our Team</a></li>
+            <li>
+              <a class="text-[#988C88] hover:text-yellow-500" href="tel:+254746362415">
+              <ion-icon name="call-outline"></ion-icon> Feel free to reach us
+              </a>
+            </li>
+            <li>
+                <a class="text-[#988C88] hover:text-yellow-500" href="mailto:bazumnoma254@gmail.com">
+              <ion-icon name="mail-outline"></ion-icon> Email Us
+              </a>
+            </li>
+            <li>
+              <ion-icon name="location-outline" class="text-[#988C88]"></ion-icon>
+              <a class="text-[#988C88]" href="#about">Nyahururu, Kenya</a>
+            </li>
           </ul>
           <ul class="flex flex-col justify-start items-start gap-2 lg:pl-4">
             <li>
-              <h3 class="font-semibold md:font-bold text-lg mb-4">Our work</h3>
+                <h3 class="font-semibold md:font-bold text-lg mb-4" style="color: yellow;">Our work...</h3>
             </li>
             <li><a class="text-[#988C88]" href="#">Feature</a></li>
             <li><a class="text-[#988C88]" href="#">Latest</a></li>
@@ -898,7 +927,7 @@
             class="flex flex-col justify-start items-start gap-4 lg:w-96 lg:pr-10 lg:-ml-12"
           >
             <li>
-              <h3 class="font-semibold md:font-bold text-lg mb-4">Newsletter</h3>
+                <h3 class="font-semibold md:font-bold text-lg mb-4" style="color: yellow;">Newsletter...</h3>
             </li>
             <li>
               <p class="text-[#988C88] text-sm mb-2">
@@ -917,9 +946,9 @@
 
         <div class="flex items-center justify-center">
           <p class="text-[#988C88] font-semibold text-xs sm:text-sm">
-            CODEFUSION:©2024 All rights reserved.  This template is made with
+            <span style="color: yellow;">CODEFUSION:©2024 All rights reserved. This template is made with</span>
             <ion-icon class="text-blue-400" name="heart-outline"></ion-icon>
-            by
+            <span style="color: rgb(255, 238, 0);">by</span>
             <span class="text-blue-400"> Diah M. </span>
           </p>
         </div>
@@ -990,11 +1019,11 @@
   </div>
 
   <!-- Service Item 3 -->
-  <div class="flex flex-col items-start p-6 bg-blue-400 rounded-lg shadow-lg">
+  <div class="flex flex-col items-start p-6 bg-blue-300 rounded-lg shadow-lg">
     <div class="w-16 h-16 flex items-center justify-center bg-yellow-500 text-red-400 rounded-full">
       <ion-icon name="videocam-outline" class="text-3xl"></ion-icon>
     </div>
-    <h2 class="text-2xl font-bold mt-4 text-yellow-800">VIDEO PRODUCTION</h2>
+    <h2 class="text-2xl font-bold mt-4 text-yellow-700">VIDEO PRODUCTION</h2>
     <p class="text-blue-600 mt-2">
       <strong>From concept to creation, we deliver high-quality video content to tell your story effectively.</strong>
     </p>
