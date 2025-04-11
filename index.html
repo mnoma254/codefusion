@@ -906,7 +906,7 @@
               </p>
             </li>
             <input
-              class="bg-yellow w-full border border-blue-500 py-2 px-4"
+              class="bg-green-500 w-full border border-blue-500 py-2 px-4 rounded-full"
               placeholder="Email"
               type="email"
             />
@@ -938,7 +938,79 @@
     <script type="module" src="./assets/index.js"></script>
   <section
     id="services"
-    class="w-full min-h-screen p-4 pb-20 sm:p-16 md:p-24 lg:p-16 flex flex-col gap-20 md:gap-12"
-    style="background-image: url('./assets/images/services-bg.webp')"
+    class="w-full min-h-screen p-4 pb-20 sm:p-16 md:p-24 lg:p-16 flex flex-col gap-20 md:gap-12 relative"
+    style="background-image: url('./assets/images/services-bg.webp'); background-size: cover; background-position: center;"
   >
-  
+    <!-- Encouraging Text -->
+    <div class="absolute top-10 left-10 lg:top-16 lg:left-16 text-white z-10">
+      <h1 class="text-4xl lg:text-6xl font-bold leading-tight">
+        Empower Your Vision
+      </h1>
+      <p class="mt-12 text-lg lg:text-xl font-medium"></p>
+        Unlock the potential of your ideas with our innovative solutions. Together, we create, inspire, and achieve greatness.
+      </p>
+      <div class="flex justify-center mt-7"></div>
+        <button class="px-6 py-3 bg-pink-500 text-white font-semibold rounded-lg hover:bg-blue-600">
+          Get Started Today
+        </button>
+      </div>
+    </div>
+
+    <!-- Existing Content -->
+    <div class="flex flex-col gap-4">
+      <h3 class="text-xl leading-8 mt-20 md:mt-10"></h3>
+      <div class="w-16 h-1 bg-blue-400"></div>
+      <h1 class="font-bold text-4xl mt-3">WHAT WE DO??</h1>
+      <div class="w-16 h-1 bg-blue-400"></div>
+    </div>
+    <div class="w-full lg:w-4/6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Service items here -->
+    </div>
+    <div class="w-full lg:w-4/6 grid grid-cols-1 md:grid-cols-2 gap-8">
+  <!-- Service Item 1 -->
+  <div class="flex flex-col items-start p-6 bg-green-500 rounded-lg shadow-lg">
+    <div class="w-16 h-16 flex items-center justify-center bg-blue-500 text-white rounded-full">
+      <ion-icon name="code-slash-outline" class="text-3xl"></ion-icon>
+    </div>
+    <h2 class="text-2xl font-bold mt-4">SOFTWARE DEVELOPMENT</h2>
+    <p class="text-gray-600 mt-2">
+      <strong>We build tailored software solutions to meet your unique business needs, ensuring efficiency and scalability.</strong>
+    </p>
+  </div>
+
+  <!-- Service Item 2 -->
+  <div class="flex flex-col items-start p-6 bg-black rounded-lg shadow-lg">
+    <div class="w-16 h-16 flex items-center justify-center bg-green-500 text-white rounded-full">
+      <ion-icon name="desktop-outline" class="text-3xl"></ion-icon>
+    </div>
+    <h2 class="text-2xl font-bold mt-4">WEB DESIGN & DEVELOPMENT</h2>
+    <p class="text-yellow-600 mt-2">
+      <strong>Create stunning, responsive websites that captivate your audience and drive engagement.
+    </p>
+  </div>
+
+  <!-- Service Item 3 -->
+  <div class="flex flex-col items-start p-6 bg-blue-400 rounded-lg shadow-lg">
+    <div class="w-16 h-16 flex items-center justify-center bg-yellow-500 text-red-400 rounded-full">
+      <ion-icon name="videocam-outline" class="text-3xl"></ion-icon>
+    </div>
+    <h2 class="text-2xl font-bold mt-4 text-yellow-800">VIDEO PRODUCTION</h2>
+    <p class="text-blue-600 mt-2">
+      <strong>From concept to creation, we deliver high-quality video content to tell your story effectively.</strong>
+    </p>
+  </div>
+
+  <!-- Service Item 4 -->
+  <div class="flex flex-col items-start p-6 bg-yellow-500 rounded-lg shadow-lg mt-8">
+    <div class="w-16 h-16 flex items-center justify-center bg-red-500 text-white rounded-full">
+      <ion-icon name="megaphone-outline" class="text-3xl"></ion-icon>
+    </div>
+    <h2 class="text-2xl font-bold mt-4 text-blue-500">DIGITAL MARKETING</h2>
+    <p class="text-gray-600 mt-2">
+      <strong>Boost your online presence with our expert digital marketing strategies, including SEO, PPC, and social media.
+    </p>
+  </div>
+</div>
+  </section>
+</body>
+</html>
