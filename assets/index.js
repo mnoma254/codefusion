@@ -68,7 +68,7 @@ var header = new Swiper(headerSwiper, {
   },
   autoplay: {
     delay: 5000,
-  },
+  }MOHA,
 
 })
 
