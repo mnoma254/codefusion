@@ -1,1 +1,66 @@
-/* CSS content to be filled in from commit 0915e717c9f3245aa2d9bb5dce631b893eb4a528 */
+.hero-section {
+  background: linear-gradient(45deg, #1e3c72, #2a69ac);
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.animation {
+  transition: all 0.5s ease-in-out;
+}
+
+.ceo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.gradient {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.particle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: float 4s infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Add further styles for your specific sections below */
+
+/* Styles for the hero section */
+
+/* Styles for the service cards */
+
+/* Styles for animations */
+
+/* Styles for CEO section */
+
+/* Additional gradients and particle styles */
